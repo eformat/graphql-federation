@@ -3,16 +3,12 @@ package org.acme;
 import org.eclipse.microprofile.graphql.GraphQLApi;
 import org.eclipse.microprofile.graphql.Query;
 
-import javax.ws.rs.Produces;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
-
 @GraphQLApi
-@Produces(APPLICATION_JSON)
 public class MovieResource {
 
     private static final Map<String, Movie> MOVIES = new HashMap<>();
