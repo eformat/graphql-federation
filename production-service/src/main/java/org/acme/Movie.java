@@ -13,7 +13,7 @@ public class Movie {
     @External @NonNull @Id
     public String movieId;
 
-    @External
+    @External @NonNull
     public String title;
 
     public Movie(String movieId) {
